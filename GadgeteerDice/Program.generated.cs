@@ -18,9 +18,6 @@ namespace GadgeteerDice {
         /// <summary>The USB Client DP module using socket 8 of the mainboard.</summary>
         private Gadgeteer.Modules.GHIElectronics.USBClientDP usbClientDP;
         
-        /// <summary>The Multicolor LED module using socket 2 of the mainboard.</summary>
-        private Gadgeteer.Modules.GHIElectronics.MulticolorLED multicolorLED;
-        
         /// <summary>The Button module using socket 1 of the mainboard.</summary>
         private Gadgeteer.Modules.GHIElectronics.Button button;
         
@@ -53,7 +50,6 @@ namespace GadgeteerDice {
         
         private void InitializeModules() {
             this.usbClientDP = new GTM.GHIElectronics.USBClientDP(8);
-            this.multicolorLED = new GTM.GHIElectronics.MulticolorLED(2);
             this.button = new GTM.GHIElectronics.Button(1);
             this.breadBoardX1 = new GTM.GHIElectronics.BreadBoardX1(18);
             this.extender = new GTM.GHIElectronics.Extender(14);
